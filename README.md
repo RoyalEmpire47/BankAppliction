@@ -22,4 +22,10 @@ The app starts out with a login screen, in which the user can either log in with
 
 # SCREENSHOTS
 
- <img src="Images/login.png">
+<img src="Images/splashscreen.jpg" height="400"> <img src="Images/login.png" height="400"> <img src="Images/signup.jpg" height="400"> 
+
+<img src="Images/dashboard.jpg" height="400"> <img src="Images/drawer.jpg" height="400"> <img src="Images/Accounts.jpg" height="400">
+ 
+ <img src="Images/Moneytransfer.jpg" height="400"> <img src="Images/Transaction.jpg" height="400"> <img src="Images/payment.jpg" height="400">
+
+
