@@ -22,4 +22,4 @@ The app starts out with a login screen, in which the user can either log in with
 
 # SCREENSHOTS
 
- <img src="/Images/login.png"</img> 
+ <img src="Images/login.png">
