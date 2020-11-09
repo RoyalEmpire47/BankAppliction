@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DepositeFragment"
+    android:background="@drawable/background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_deposit_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="180dp"
+                android:text="Select an Account To Deposit To"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/dep_spn_accounts1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_bg"
+                android:padding="5dp"
+                android:spinnerMode="dialog"></androidx.appcompat.widget.AppCompatSpinner>
+
+            <EditText
+                android:id="@+id/edt_deposit_amount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:hint="Enter Deposit Amount"
+                android:inputType="numberDecimal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cancel_deposit1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/rounded_green"
+                    android:text="Cancle"
+                    android:textColor="#FAF6F7"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></Button>
+
+                <Button
+                    android:id="@+id/btn_deposit1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/rounded_green"
+                    android:text="Deposit"
+                    android:textColor="#FAF6F7"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></Button>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/CoundowntimerD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="250dp"
+                android:textColor="@color/colorRad"
+                android:text=""
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</ScrollView>

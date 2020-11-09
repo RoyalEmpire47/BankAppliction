@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentFragment"
+    android:background="@drawable/background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_select_acc_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="130dp"
+                android:text="@string/select_acc_pay_from"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spn_select_acc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_bg"
+                android:padding="5dp"
+                android:spinnerMode="dialog"></androidx.appcompat.widget.AppCompatSpinner>
+
+            <TextView
+                android:id="@+id/txt_no_payees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/txt_no_payees_msg"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_select_payee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/select_payee_msg"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spn_select_payee"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_bg"
+                android:padding="5dp"
+                android:spinnerMode="dialog"></androidx.appcompat.widget.AppCompatSpinner>
+
+            <EditText
+                android:id="@+id/edt_payment_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:hint="@string/amount_for_payee"
+                android:inputType="numberDecimal"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_make_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_green"
+                android:text="Continune"
+                android:textColor="#FAF6F7"
+                android:textSize="20dp"
+                android:textStyle="bold"></Button>
+
+            <TextView
+                android:id="@+id/Coundowntimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="120dp"
+                android:textColor="@color/colorRad"
+                android:text=""
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:id="@+id/txt_add_payee_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Add Payee"
+                    android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                    android:textColor="@color/drawerHeader" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floating_action_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    app:srcCompat="@drawable/plus_icon_24"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>

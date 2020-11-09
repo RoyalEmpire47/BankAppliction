@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="130.0dip"
+            android:layout_height="130.0dip"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/banklogo"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:padding="0.0dip"
+            android:text="Welcome back!"
+            android:textColor="@color/colorBalck"
+            android:textSize="21.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center"
+            android:padding="5.0dip"
+            android:text="Log in to your existing account"
+            android:textColor="@color/colorGrey1"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_editetext"
+                    android:drawableLeft="@drawable/ic_perm_"
+                    android:drawablePadding="10.0dip"
+                    android:hint="Email"
+                    android:inputType="text"
+                    android:padding="12.0dip"
+                    android:textColor="@color/colorGrey2"
+                    android:textColorHint="@color/colorGrey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip">
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_editetext"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:drawablePadding="10.0dip"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="12.0dip"
+                    android:textColor="@color/colorGrey2"
+                    android:textColorHint="@color/colorGrey"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chk_remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/remember"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="52.0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginTop="30.0dip"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/rounded_green2"
+                android:elevation="10.0dip"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="150.0dip"
+                    android:id="@+id/btn_login"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_green2"
+                    android:gravity="center"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18.0dip">
+                </Button>
+
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/progress_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:visibility="invisible"></ProgressBar>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip"
+                android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10.0dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="52.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="30.0dip"
+            android:layout_marginRight="20.0dip"
+            android:elevation="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48.0dip"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Don't have an account? "
+                android:textColor="@color/colorGrey2" />
+
+            <TextView
+                android:id="@+id/btn_create_account"
+                android:layout_width="wrap_content"
+                android:layout_height="48.0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5.0dip"
+                android:gravity="center"
+                android:text="sign Up"
+                android:textSize="20.0dip"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="25.0dip" />
+    </LinearLayout>
+</ScrollView>

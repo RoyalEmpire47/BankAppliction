@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TransferFragment"
+    android:background="@drawable/background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_from_acc_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="130dp"
+                android:text="@string/str_from_acc_msg"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spn_select_sending_acc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_bg"
+                android:padding="5dp"
+                android:spinnerMode="dialog"></androidx.appcompat.widget.AppCompatSpinner>
+
+            <EditText
+                android:id="@+id/edt_transfer_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:hint="@string/str_transfer_amount"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/txt_to_acc_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="@string/str_to_acc_msg"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spn_select_receiving_acc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_bg"
+                android:padding="5dp"
+                android:spinnerMode="dialog"></androidx.appcompat.widget.AppCompatSpinner>
+
+            <Button
+                android:id="@+id/btn_confirm_transfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_green"
+                android:text="Continune"
+                android:textColor="#FAF6F7"
+                android:textSize="20dp"
+                android:textStyle="bold"></Button>
+
+            <TextView
+                android:id="@+id/CoundowntimerT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="200dp"
+                android:textColor="@color/colorRad"
+                android:text=""
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
