@@ -21,3 +21,5 @@ The app starts out with a login screen, in which the user can either log in with
 - Shared Preferences: Saving the current profile (logged into by the user), and all of its general info, accounts and transactions.
 
 # SCREENSHOTS
+
+ <img src="/Images/login.png"</img> 
